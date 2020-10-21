@@ -15,6 +15,7 @@ p{
 
 .nav-con{
     height: 7%;
+    margin-top: 1%;
 }
 
 .arrow-left{
@@ -33,7 +34,7 @@ p{
 }/*--nav--*/
 
 .img-con{
-    height: 70%;
+    height: 60%;
     margin: 0;
     padding: 0;
 }
@@ -41,7 +42,7 @@ p{
 .image-holder{
     background-image: url(img/illustration-1.jpg);
     background-position: center;
-    background-size: 30%;    
+    background-size: 35%;    
     background-repeat: no-repeat;
 }
 /*--middle-images--*/
@@ -49,14 +50,15 @@ p{
 
 .quest-box{
     border-radius: 30px;
-    background-color:  #ffff00;
+    background-color: ghostwhite;
+    box-shadow: 3px 3px #888888;
 }
 /*--third-question-text--*/
 
 
 .answer-con{
     margin-top: 2%;
-    background-color:  #3498db;
+    height: 10%;
 }
 
 .circle-con{
@@ -64,9 +66,10 @@ p{
 }
 
 .circle{
-    height: 40%;
-    width: 40%;
-    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 40%;
 }
 
 .text{
