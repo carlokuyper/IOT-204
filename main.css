@@ -3,105 +3,60 @@ body {
     padding: 0;
 }
 
-
 h1, h2, h3, h4 , h5, p{
     font-family: 'Montserrat', sans-serif;
-}
-
-.top-navigation-buttons{
-    width: 100%;
-    height:  150px;
-    background-color:  #ff0000;
-}
-
-/*--top-buttons--*/
-
-
-
-
-.illustration-container{
-    width: 100%;
-    height:  800px;
-    background-color:  #ffffff;
-}
-
-.image-holder{
-    width: 100%;
-    height: 100%;
-    background-image: url(img/illustration-1.jpg);
-    background-position: center;
-    background-size: cover;    
-}
-
-/*--middle-images--*/
-
-
-.question-container{
-    width: 100%;
-    height:  500px;
-    background-color:  #ffff00;
-}
-
-.quest-box{
-    width: 70%;
-    height: 100%;
-    background-color: aquamarine;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-h1{
-    font-size: 80px;
     text-align: center;
-    padding-top: 60px;
 }
 
 p{
     font-size: 45px;
-    text-align: center;
-    padding-top: 10%;
 }
+/*--primary-items--*/
 
+
+.image-holder{
+    background-image: url(img/illustration-1.jpg);
+    background-position: center;
+    background-size: 50%;    
+    background-repeat: no-repeat;
+}
+/*--middle-images--*/
+
+
+.quest-box{
+    border-radius: 9%;
+    background-color:  #ffff00;
+}
 /*--third-question-text--*/
 
 
-.answer-count-container{
-    width: 100%;
-    height: 294px;
+.answer-con{
+    height: 10%;
     background-color:  #3498db;
 }
 
-
-.yes-box{
-    width: 30%;
+.circle-con{
     height: 100%;
-    background-color: coral;
-    float: left;
-    margin-right: 5%;
 }
 
-.maybe-box{
-    width: 30%;
-    height: 100%;
-    background-color:beige;
-    float: left;
-    margin-right: 5%;
-    
+.circle{
+    height: 40%;
+    width: 40%;
+    background-color: blue;
 }
 
-.no-box{
-    width: 30%;
-    height: 100%;
-    background-color:deeppink;
-    float: left;
+.text{
+    color: white;
+    font-size: 50px;
 }
 
+.answer{
+    width: 60%;
+    height: 30%;
+    font-size: 45px;    
+    margin-top: 0%;
+    margin-left: 17%;
+    text-align: center;
+    float: left;
+}
 /*--four-answer-section--*/
-
-
-
-
-
-
-
-
