@@ -9,7 +9,7 @@ h1, h2, h3, h4 , h5, p{
 }
 
 p{
-    font-size: 35px;
+    font-size: 30px;
 }
 /*--primary-items--*/
 
@@ -34,7 +34,7 @@ p{
 }/*--nav--*/
 
 .img-con{
-    height: 60%;
+    height: 45%;
     margin: 0;
     padding: 0;
 }
@@ -42,23 +42,24 @@ p{
 .image-holder{
     background-image: url(img/illustration-1.jpg);
     background-position: center;
-    background-size: 35%;    
+    background-size: 30%;
     background-repeat: no-repeat;
 }
 /*--middle-images--*/
 
 
 .quest-box{
+    margin-top: 1%;
     border-radius: 30px;
-    background-color: ghostwhite;
-    box-shadow: 3px 3px #888888;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px #7e7b75;
 }
 /*--third-question-text--*/
 
 
 .answer-con{
     margin-top: 2%;
-    height: 10%;
+    height: 15%;
 }
 
 .circle-con{
@@ -66,15 +67,42 @@ p{
 }
 
 .circle{
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
-    margin-left: 40%;
+    margin-left: 33%;
+    margin-top: 10%;
+    float: left;
+}
+
+.r-button{
+    height: 5%;
+    width: 15%;
+    margin-top: 2%;
+    border-radius: 20px;
+    background-color: gold;
+    text-align: center;
 }
 
 .text{
     color: white;
-    font-size: 50px;
+    font-size: 35px;
+    margin-top: 30%;
+    margin-left: 25%;
+    float: left;
 }
 
+.text-m{
+    color: white;
+    font-size: 35px;
+    margin-top: 30%;
+    margin-left: 1.5%;
+    float: left;
+}
+
+.text-r{
+    font-size: 35px;
+    margin-top: 15%;
+    text-align: center;
+}
 /*--four-answer-section--*/
