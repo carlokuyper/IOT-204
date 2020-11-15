@@ -9,28 +9,39 @@ h1, h2, h3, h4 , h5, p{
 }
 
 p{
-    font-size: 30px;
+    font-size: 40px;
 }
 /*--primary-items--*/
 
 .nav-con{
-    height: 7%;
-    margin-top: 1%;
+    height: 10%;
+    margin-top: 5%;
+    padding: 5%;
 }
 
 .arrow-left{
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent; 
-    border-right:60px solid black; 
-    margin-top: 1%;
+    width: 70%;
+    height: 70%;
+    background-image: url(img/Asset/right-arrow-black-triangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    transform: scaleX(-1);
+    background-color: rgb(243, 243, 243);
+    border-radius: 15px;
 }
 
 .arrow-right {
-    height: 20%; 
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent; 
-    border-left: 60px solid black;
-    margin-top: 1%;
+    width: 70%;
+    height: 70%;
+    margin-left: 27%;
+    background-image: url(img/Asset/right-arrow-black-triangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 15px;
+    
 }/*--nav--*/
 
 .img-con{
@@ -42,67 +53,123 @@ p{
 .image-holder{
     background-image: url(img/illustration-1.jpg);
     background-position: center;
-    background-size: 30%;
+    background-size: 80%;
     background-repeat: no-repeat;
 }
 /*--middle-images--*/
 
 
 .quest-box{
-    margin-top: 1%;
+    margin-top: 8%;
     border-radius: 30px;
-    background-color: whitesmoke;
-    box-shadow: 3px 3px #7e7b75;
+    background-color: white;
+    box-shadow: 0px 15px 15px rgb(246, 246, 246);
 }
 /*--third-question-text--*/
 
 
 .answer-con{
-    margin-top: 2%;
-    height: 15%;
+    margin-top: 5%;
+    height: 20%;
+    margin-left: 5%;
 }
 
-.circle-con{
-    height: 100%;
+.circle-1{
+    width: 80%;
+    height: 80%;
+    background-image: url(img/Asset/green\ Button.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 }
 
-.circle{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    margin-left: 33%;
-    margin-top: 10%;
-    float: left;
+.circle-2{
+    width: 80%;
+    height: 80%;
+    background-image: url(img/Asset/yellow\ button.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.circle-3{
+    width: 80%;
+    height: 80%;
+    background-image: url(img/Asset/grey\ button.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .r-button{
     height: 5%;
-    width: 15%;
-    margin-top: 2%;
+    width: 25%;
+    margin-top: 5%;
     border-radius: 20px;
-    background-color: gold;
+    background-color: rgba(0, 0, 0, 0.363);
     text-align: center;
+}
+
+.r-button:hover{
+    background-color: black;
+}
+
+.reset-text{
+    margin-top: 10%;
+}
+
+.text-1{ 
+    color: white;
+    font-size: 35px;
+    margin-top: 65%;
+    margin-left: 45%;
+    float: left;
+}
+
+.text-2{
+    color: white;
+    font-size: 35px;
+    margin-top: 65%;
+    margin-left: 45%;
+    float: left;
+}
+
+.text-3{
+    color: white;
+    font-size: 35px;
+    margin-top: 65%;
+    margin-left: 45%;
+    float: left;
+}
+
+.text-des-1{
+    opacity: 0.5;
+    font-size: 35px;
+    margin-left: 28%;
+    float: left;
+}
+
+.text-des-2{
+    opacity: 0.5;
+    font-size: 35px;
+    margin-left: 15%;
+    float: left;
+}
+
+.text-des-3{
+    opacity: 0.5;
+    font-size: 35px;
+    margin-left: 25%;
+    float: left;
 }
 
 .text{
     color: white;
     font-size: 35px;
-    margin-top: 30%;
-    margin-left: 25%;
+    margin-top: 65%;
+    margin-left: 45%;
     float: left;
-}
-
-.text-m{
-    color: white;
-    font-size: 35px;
-    margin-top: 30%;
-    margin-left: 1.5%;
-    float: left;
-}
-
-.text-r{
-    font-size: 35px;
-    margin-top: 15%;
-    text-align: center;
 }
 /*--four-answer-section--*/
+
+
