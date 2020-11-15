@@ -1,112 +1,90 @@
-$(function() { 
+var questions = ["Do you understand the work that is demonstrated today?", "Would you like an extension?", "Would you give me a 5 star rating?", "Am I your favorite lecture?"];
 
-    console.log("Test Login")
-    $("#problem").hide();
-    $("#sign-problem").hide();
-    var libraryPage = "home.html"
-    
-    
-    //Login Page 
+var no = [];
+var maybe = [];
+var yes = [];
 
-    $(".login-btn").on("click", function(){
-        event.preventDefault();
-    
-        var nameInput = document.getElementById("inputName").value
-        var passwordInput = document.getElementById("inputPassword").value
+var counter = 0;
 
-        if(nameInput == "Metal"){
-            if(passwordInput == "X"){
-                $(location).attr('href', libraryPage);
-                
-            }
-            
-        }   
-        
-        if(nameInput == "Mike"){
-            if(passwordInput == "rick"){
-                $(location).attr('href', libraryPage);
-                
-            }
+$(function () {
 
-        } 
-        
-        if(nameInput == "Mike"){
-            if(passwordInput == "morty"){
-                $(location).attr('href', libraryPage);
-                
-            }
-            
-        } 
-        
+  function update() {
+    $(".text-1").text(no[counter]);
+    $(".text-2").text(maybe[counter]);
+    $(".text-3").text(yes[counter]); 
+  };
+   
+  function globalReset() {
+    for (let i = 0; i < questions.length; i++) {
+      no[i]=0
+      maybe[i]=0
+      yes[i]=0   
+    } 
+  };
 
-        if(nameInput == "Admin"){
-            if(passwordInput == "1234"){
-                $(location).attr('href', libraryPage);
-                
-            }
-            
-        } 
+  for (let i = 0; i < questions.length; i++) {
+    no.push(0)
+    maybe.push(0)
+    yes.push(0)    
+  }
 
-        if(nameInput == ""){
-            $("#problem").show();
-            $("#problem").text("Wow, that cool name isn't in our database sorry about that")
-            
-        }  
-            
-        if(passwordInput == ""){
-            $("#problem").show();
-            $("#problem").text("Unfortunately that password isn't in our awesome database")
-            
-        }  
+  update();
 
-        if(nameInput == ""){
-            if(passwordInput == ""){
-                $("#problem").show();
-                $("#problem").text("We are sorry, but that awesome username and password isn't available")
-                
-            }
-        } 
-    
-    });
+  console.log(questions[counter]);
+  console.log(no.length);
 
-    //Sign Up
+  $('#next').click(function () {
+    counter++
+    if (counter > questions.length-1){
+      counter = questions.length-1
+    }
+    console.log(counter)
+    con = counter + 1;
+    $("#question").text("Question "+con);
+      console.log(questions[counter]);
+      $("#question-change").text(questions[counter]); 
+      update();
+  });
 
-    $(".signup-btn").on("click", function(){
-        event.preventDefault();
-       
-        var signupUser = document.getElementById("inputName").value
-        var signupEmail = document.getElementById("inputPassword").value
-        var signupPass = document.getElementById("inputName").value
-        var signupPassConfirm = document.getElementById("inputPassword").value   
+  $('#back').click(function () {
+    counter--
+    if (counter < 0){
+      counter = 0
+    }
+    console.log(counter)
+    con = counter + 1;
+    $("#question").text("Question "+con);
+   console.log(questions[counter]);
+   $("#question-change").text(questions[counter]);
+   update();
+  });
 
-        if(signupUser == ""){
-            $("#sign-problem").show();
-            $("#sign-problem").text("Please make sure that your epic details is correct")
-            
-        }  
-            
-        if(signupEmail == ""){
-            $("#sign-problem").show();
-            $("#sign-problem").text("Please make sure that your epic details is correct")
-            
-        }  
+  $('#circle-1').click(function () {
+    no[counter]++;
+    update();  
+  });
 
-        if(signupPass == ""){
-            $("#sign-problem").show();
-            $("#sign-problem").text("Please make sure that your epic details is correct")
-           
-        } 
+  $('#circle-2').click(function () {
+    maybe[counter]++;
+    update(); 
+  });
 
-        if(signupPassConfirm == ""){
-            $("#sign-problem").show();
-            $("#sign-problem").text("Please make sure that your epic details is correct")
-             
-        }
+  $('#circle-3').click(function () {
+    yes[counter]++;
+    update(); 
+  });
 
-        if(signupPass == signupPassConfirm){
-            $(location).attr('href', libraryPage);     
-        }
+  $('#r-button').click(function () {
+    no[counter]=0;  
+    maybe[counter]=0;
+    yes[counter]=0;  
+    update()  
+  });
+  $('#r-All-button').click(function () {
+    globalReset() 
+    update()  
+  });
 
-    });
-
+  
+  
 });

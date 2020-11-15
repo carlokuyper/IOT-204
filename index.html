@@ -16,24 +16,30 @@
         <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 
         <!-- js -->
-        <script src="js/index.js"></script>
+        
         <script src="js/main.js"></script>
-
+        <script src="js/index.js"></script>
     </head>
 
-    <body>
+    <body class="container">
         
         <div class="container">
-          <div class="row nav-con ">
+          <div class="row nav-con">
             <div class="col-sm">
               <div class="col">
-                <div class="col arrow-left"></div></div>
+                <div class="col arrow-left"  id="back">
+                  
+                </div>
+              </div>
             </div>
             <div class="col-sm">
-              <p>Answer Mi</p>
+              <p style="font-size: 30px; display: inline;">Answer Mi</p>
             </div>
             <div class="col-sm">
-              <div class="col"><div class="col arrow-right"></div></div>
+              <div class="col"><div class="col arrow-right" id="next">
+
+              </div>
+            </div>
             </div>
           </div>
         </div><!--topnav-->
@@ -45,8 +51,8 @@
        <div class="row">
           <div class="col-sm-2"></div>
            <div class="col-md quest-box">
-               <h2 class="display-4">Question 1</h2>
-               <p>Do you understand the work that is demonstrated today?</p>
+               <h2 style="font-size: 35px;" id="question">Question 1</h2>
+               <p id="question-change">Do you understand the work that is demonstrated today?</p>
            </div>
           <div class="col-sm-2"></div>
        </div><!--question-con-->
@@ -54,35 +60,38 @@
        <div class="container">
          <div class="row">
            <div class="col"></div>
-              <div class="r-button">
+              <div class="r-button" id="r-button">
                 <p class="reset-text" style="color: white;">Reset</p>
+              </div>
+              <div class="r-all-button" id="r-All-button">
+                <p class="reset-text" style="color: white;">Reset All</p>
               </div>
             <div class="col"></div>
          </div>
        </div>
 
        <div class="container">
-        <div class="row answer-con">
+        <div class="container row answer-con">
           <div class="col-sm">
-            <div class="circle-1">
-              <p class="text-1">5</p>
+            <div class="circle-1" id="circle-1">
+              <p class="text-1" id="text-1">5</p>
             </div>
             <p class="text-des-1">No</p>
           </div>
           <div class="col-sm">
-            <div class="circle-2">
-              <p class="text-2">3</p>
+            <div class="circle-2" id="circle-2">
+              <p class="text-2" id="text-2">3</p>
             </div>
             <p class="text-des-2">Maybe</p>
           </div>
           <div class="col-sm">
-            <div class="circle-3">
-              <p class="text-3">1</p>
+            <div class="circle-3" id="circle-3">
+              <p class="text-3" id="text-3">1</p>
             </div>
             <p class="text-des-3">Yes</p>
           </div>
         </div>
-      </div>answer-con
+      </div>
 
     </body>
 
